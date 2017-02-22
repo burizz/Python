@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 import os shutil
 
-if:
-
 def backup_file(file_to_backup):
     """ Copy file to backup dir """
     destination_file = file_to_backup + "_bkp_eds1057"
