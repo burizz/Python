@@ -2,7 +2,6 @@
 
 import smtplib, subprocess, gzip, shutil, os, time
 
-if:
 
 def dump_database(db_host, db_user, db_pass, sql_dump_filename, backup_dir):
     args = ["mysqldump", "-h", db_host, "-u", db_user, "-p" + db_pass, "--max_allowed_packet=512M", "--all-databases", "--ignore-table=mysql.event"]
